@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2df238405ce34174a914936fb5831d55
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/StartMenu Scene.unity
+    guid: 9ebc9485f352fc04b99fff30eb00482f
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/Highscore Scene.unity
+    guid: 9706cae38f46bd142861438025a04ef6
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/PlayerNameInput.unity
+    guid: 70356e2152c8a2044abdb00ee14e7a91
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: 2d0ea164c3abd6f47aff8cc67f87ec30
+  m_configObjects: {}
