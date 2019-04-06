@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerNameBeginButton : MonoBehaviour
+public class PlayerNameBeginButton : HighscoreManager
 {
     /// <summary>
     /// on clicking the button will execute the ClickedButton method
@@ -12,6 +12,7 @@ public class PlayerNameBeginButton : MonoBehaviour
     public Button Begin;
     void Start()
     {
+        OpenConnection();
         Begin.onClick.AddListener(ClickedButton);
     }
 
@@ -20,6 +21,7 @@ public class PlayerNameBeginButton : MonoBehaviour
     /// </summary>
     void ClickedButton()
     {
+        InsertScore(Username, 0);
         if (HighscoreManager.Username != "")
         {
             SceneManager.LoadScene("Arena");

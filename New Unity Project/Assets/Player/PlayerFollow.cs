@@ -21,10 +21,11 @@ public class PlayerFollow : MonoBehaviour
         offset = transform.position - player.transform.position;
     }
 
+
     /// <summary>
     /// LateUpdate is called after Update each frame and sets the position of the camera's transformation to be the same as the player's, but is offset by the calculated offset distance.
     /// </summary>
-void LateUpdate()
+    void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.position = player.transform.position + offset;

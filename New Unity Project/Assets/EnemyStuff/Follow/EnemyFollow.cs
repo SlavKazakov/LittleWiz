@@ -25,6 +25,18 @@ public class EnemyFollow : MonoBehaviour
     void Update()
     {
 
+        if (target.position.x > transform.position.x)
+        {
+            //face right
+            transform.localScale = new Vector3(-2, 2, 1);
+        }
+        else if (target.position.x < transform.position.x)
+        {
+            //face left
+            transform.localScale = new Vector3(-2, 2, 1);
+        }
+
+
         if (transform.position.x > target.transform.position.x)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);

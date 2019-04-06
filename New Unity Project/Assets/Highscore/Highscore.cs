@@ -11,12 +11,10 @@ public class Highscore : MonoBehaviour
      
     public int Scores { get; set;}
     public string Name { get; set; }
-    public int Id { get; set; }
 
-    public Highscore(int id,int score,string name)
+    public Highscore(int score,string name)
     {
         this.Scores = score;
         this.Name = name;
-        this.Id = id;
     }
 }

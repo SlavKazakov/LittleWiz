@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4635994832015975761}
   - component: {fileID: 4635994832015975756}
   - component: {fileID: 4635994832015975757}
+  - component: {fileID: 4495616352662221334}
   m_Layer: 0
   m_Name: Blood Skeleton
   m_TagString: Ai
@@ -95,11 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  num: 8
-  EnemyAt: {fileID: 0}
-  damage: 20
   health: 200
-  deathEffect: {fileID: 0}
   rb: {fileID: 0}
 --- !u!61 &4635994832015975756
 BoxCollider2D:
@@ -148,3 +145,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &4495616352662221334
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4635994832015975760}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 903c8e6892bc89b4e92be085115f6fea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

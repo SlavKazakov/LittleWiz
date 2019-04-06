@@ -18,10 +18,7 @@ public class HighscoreManager : MonoBehaviour
     public string connectionString;
 
     public Transform scoreParent;
-
-    /// <summary>
-    /// Begins connection to the database
-    /// </summary>
+    
     public void Start()
     {
         OpenConnection();
@@ -29,7 +26,9 @@ public class HighscoreManager : MonoBehaviour
         ShowScores();
     }
 
-
+    /// <summary>
+    /// Begins connection to the database
+    /// </summary>
     public void OpenConnection()
     {
         connectionString = "URI=file:" + Application.dataPath + "/MyDatabaseScore.db";
@@ -71,7 +70,7 @@ public class HighscoreManager : MonoBehaviour
                 {
                     while (reader.Read())
                     {
-                        highscores.Add(new Highscore(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2)));
+                        highscores.Add(new Highscore(reader.GetInt32(2), reader.GetString(1)));
                     }
                     dbconnection.Close();
                     reader.Close();
@@ -154,6 +153,7 @@ public class HighscoreManager : MonoBehaviour
     /// </summary>
     public void ShowScores()
     {
+        GetScores();
         for (int i = 0; i < highscores.Count; i++)
         {
             GameObject tmpObjec = Instantiate(scorePrefab);

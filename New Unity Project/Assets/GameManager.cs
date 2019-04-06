@@ -16,7 +16,7 @@ public class GameManager : HighscoreManager
     /// </summary>
     public void GameOver()
     {
-        InsertScore(Username, PlayerController.points);
+        UpdateScores(Username, PlayerController.points);
         if (GameEnd == false)
         {
             GameEnd = true;
