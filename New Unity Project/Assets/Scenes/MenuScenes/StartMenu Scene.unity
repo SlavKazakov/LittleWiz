@@ -286,6 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383233dae87030e4c9e101059dd99f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePrefab: {fileID: 0}
+  connectionString: 
+  scoreParent: {fileID: 0}
 --- !u!4 &598306512
 Transform:
   m_ObjectHideFlags: 0
@@ -510,6 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68536e27b0bb1264a82d6a0167bec27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePrefab: {fileID: 0}
+  connectionString: 
+  scoreParent: {fileID: 0}
   StartButton: {fileID: 1476898723}
 --- !u!1 &1678611281
 GameObject:
@@ -707,7 +713,7 @@ PrefabInstance:
     - target: {fileID: 2040769163902543771, guid: ea68efe25348a754c9457246a9d504cf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16
+      value: 0.087
       objectReference: {fileID: 0}
     - target: {fileID: 2040769163902543771, guid: ea68efe25348a754c9457246a9d504cf,
         type: 3}
@@ -758,6 +764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040769163902543771, guid: ea68efe25348a754c9457246a9d504cf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.752969
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea68efe25348a754c9457246a9d504cf, type: 3}
