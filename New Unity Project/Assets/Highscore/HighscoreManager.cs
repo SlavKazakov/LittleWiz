@@ -50,7 +50,7 @@ public class HighscoreManager : MonoBehaviour
         }
     }
     /// <summary>
-    /// tests if there is a connection to the database by selecting information from the database and reads it
+    /// Gets information from the database in the form of a list
     /// </summary>
     public void GetScores()
     {
